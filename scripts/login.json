@@ -1,0 +1,20 @@
+[
+  {
+    "type": "click",
+    "rel_pos": [
+      0.5,
+      0.5
+    ],
+    "button": "Button.left",
+    "modifiers": {
+      "ctrl": false,
+      "shift": false,
+      "alt": false
+    },
+    "time": 5
+  },
+  {
+    "type": "nop",
+    "time": 75
+  }
+]
