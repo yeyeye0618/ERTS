@@ -120,7 +120,7 @@ def keep_awake():
     ctypes.windll.kernel32.SetThreadExecutionState(0x80000000 | 0x00000002 | 0x00000001)
     
 if __name__ == "__main__":
-    if env_generator():
+    if not env_generator():
         print("\nsetup .env file\n")
         sys.exit(0)
     scheduler = GameScheduler()
