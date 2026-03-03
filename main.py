@@ -7,6 +7,7 @@ import schedule
 import subprocess
 import logging
 import sys
+import shutil
 
 from action_player import ActionPlayer
 from discord_sender import DiscordSender
@@ -17,8 +18,10 @@ logger = logging.getLogger(__name__)
 
 def env_generator():
     if os.path.isfile('.env'):
-        return
-    os.rename("env.copy", ".env")
+        return True
+    os.path.join('.', ".env")
+    shutil.copyfile("env.copy", ".env")
+    return False
 
 class GameScheduler:
     def __init__(self):
@@ -117,9 +120,11 @@ def keep_awake():
     ctypes.windll.kernel32.SetThreadExecutionState(0x80000000 | 0x00000002 | 0x00000001)
     
 if __name__ == "__main__":
+    if env_generator():
+        print("\nsetup .env file\n")
+        sys.exit(0)
     scheduler = GameScheduler()
     keep_awake()
-    env_generator()
     
     while True:
         scheduler.load_config()
