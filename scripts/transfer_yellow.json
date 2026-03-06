@@ -1,0 +1,177 @@
+[
+  {
+    "type": "keydown",
+    "key": "Key.ctrl_l",
+    "time": 4.238430738449097
+  },
+  {
+    "type": "click",
+    "rel_pos": [
+      0.4715625,
+      0.3525
+    ],
+    "button": "Button.left",
+    "modifiers": {
+      "ctrl": true,
+      "shift": false,
+      "alt": false
+    },
+    "time": 4.693260192871094
+  },
+  {
+    "type": "keydown",
+    "key": "Key.ctrl_l",
+    "time": 4.742536306381226
+  },
+  {
+    "type": "keydown",
+    "key": "Key.ctrl_l",
+    "time": 4.848905086517334
+  },
+  {
+    "type": "keydown",
+    "key": "Key.ctrl_l",
+    "time": 4.972588539123535
+  },
+  {
+    "type": "keydown",
+    "key": "Key.ctrl_l",
+    "time": 5.079396486282349
+  },
+  {
+    "type": "keydown",
+    "key": "Key.ctrl_l",
+    "time": 5.203350305557251
+  },
+  {
+    "type": "keyup",
+    "key": "Key.ctrl_l",
+    "time": 5.2144622802734375
+  },
+  {
+    "type": "click",
+    "rel_pos": [
+      0.47421875,
+      0.22875
+    ],
+    "button": "Button.left",
+    "modifiers": {
+      "ctrl": false,
+      "shift": false,
+      "alt": false
+    },
+    "time": 6.045750617980957
+  },
+  {
+    "type": "click",
+    "rel_pos": [
+      0.6578125,
+      0.42125
+    ],
+    "button": "Button.left",
+    "modifiers": {
+      "ctrl": false,
+      "shift": false,
+      "alt": false
+    },
+    "time": 7.453291177749634
+  },
+  {
+    "type": "click",
+    "rel_pos": [
+      0.78671875,
+      0.77375
+    ],
+    "button": "Button.left",
+    "modifiers": {
+      "ctrl": false,
+      "shift": false,
+      "alt": false
+    },
+    "time": 8.205312490463257
+  },
+  {
+    "type": "click",
+    "rel_pos": [
+      0.8640625,
+      0.22
+    ],
+    "button": "Button.left",
+    "modifiers": {
+      "ctrl": false,
+      "shift": false,
+      "alt": false
+    },
+    "time": 10.69328498840332
+  },
+  {
+    "type": "click",
+    "rel_pos": [
+      0.68125,
+      0.69875
+    ],
+    "button": "Button.left",
+    "modifiers": {
+      "ctrl": false,
+      "shift": false,
+      "alt": false
+    },
+    "time": 12.309064626693726
+  },
+  {
+    "type": "click",
+    "rel_pos": [
+      0.496875,
+      0.2275
+    ],
+    "button": "Button.left",
+    "modifiers": {
+      "ctrl": false,
+      "shift": false,
+      "alt": false
+    },
+    "time": 13.053087711334229
+  },
+  {
+    "type": "click",
+    "rel_pos": [
+      0.49140625,
+      0.59125
+    ],
+    "button": "Button.left",
+    "modifiers": {
+      "ctrl": false,
+      "shift": false,
+      "alt": false
+    },
+    "time": 14.205258846282959
+  },
+  {
+    "type": "click",
+    "rel_pos": [
+      0.75859375,
+      0.7875
+    ],
+    "button": "Button.left",
+    "modifiers": {
+      "ctrl": false,
+      "shift": false,
+      "alt": false
+    },
+    "time": 14.957204580307007
+  },
+  {
+    "type": "click",
+    "rel_pos": [
+      0.86015625,
+      0.20875
+    ],
+    "button": "Button.left",
+    "modifiers": {
+      "ctrl": false,
+      "shift": false,
+      "alt": false
+    },
+    "time": 18.661149501800537
+  }
+]

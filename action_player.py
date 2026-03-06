@@ -63,10 +63,12 @@ class ActionPlayer:
             logger.info("預處裡腳本執行完成")
             
             logger.info(f"開始執行主腳本，預計重複 {self.repeat} 次")
-            self.load_script("transfer.json")
-            for i in range(self.repeat):
-                logger.info(f">>> 正在執行第 {i+1} / {self.repeat} 次循環")
-                self.execute_action()
+            transfer_type = os.getenv("transfer_type").split(',')
+            for type in transfer_type:
+                self.load_script(f"transfer_{type}.json")
+                for i in range(self.repeat):
+                    logger.info(f">>> 正在執行第 {i+1} / {self.repeat} 次循環")
+                    self.execute_action()
             
             logger.info("主腳本執行完成，開始執行回報")
             for script in ["send_home.json", "show_resource.json"]:
@@ -117,8 +119,30 @@ class ActionPlayer:
         
 
 if __name__ == "__main__":
-    game_title = "未命名 - 小畫家"
+    game_title = "Endfield"
     load_dotenv(override=True)
     player = ActionPlayer(game_title)
     player.load_script("preprocess.json")
+    # player.actions = [
+    #     {
+    #         "type": "keydown",
+    #         "key": "Key.ctrl_l",
+    #         "time": 1.238430738449097
+    #     },
+    #     {
+    #         "type": "click",
+    #         "rel_pos": [
+    #         0.4715625,
+    #         0.3525
+    #         ],
+    #         "button": "Button.left",
+    #         "modifiers": {
+    #         "ctrl": True,
+    #         "shift": False,
+    #         "alt": False
+    #         },
+    #         "time": 2.693260192871094
+    #     }
+    # ]
     player.execute_action()
+    

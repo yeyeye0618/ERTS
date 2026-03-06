@@ -70,35 +70,6 @@ source = { registry = "https://pypi.org/simple" }
 sdist = { url = "https://files.pythonhosted.org/packages/a5/f5/397b61091120a9ca5001041dd7bf76c385b3bfd67a0e5bcb74b852bd22a4/evdev-1.9.3.tar.gz", hash = "sha256:2c140e01ac8437758fa23fe5c871397412461f42d421aa20241dc8fe8cfccbc9", size = 32723, upload-time = "2026-02-05T21:54:24.987Z" }
 
 [[package]]
-name = "game-recording"
-version = "0.1.0"
-source = { virtual = "." }
-dependencies = [
-    { name = "dotenv" },
-    { name = "mss" },
-    { name = "pillow" },
-    { name = "psutil" },
-    { name = "pydirectinput" },
-    { name = "pynput" },
-    { name = "pywin32" },
-    { name = "requests" },
-    { name = "schedule" },
-]
-
-[package.metadata]
-requires-dist = [
-    { name = "dotenv", specifier = ">=0.9.9" },
-    { name = "mss", specifier = ">=10.1.0" },
-    { name = "pillow", specifier = ">=12.1.1" },
-    { name = "psutil", specifier = ">=7.2.2" },
-    { name = "pydirectinput", specifier = ">=1.0.4" },
-    { name = "pynput", specifier = ">=1.8.1" },
-    { name = "pywin32", specifier = ">=311" },
-    { name = "requests", specifier = ">=2.32.5" },
-    { name = "schedule", specifier = ">=1.2.2" },
-]
-
-[[package]]
 name = "idna"
 version = "3.11"
 source = { registry = "https://pypi.org/simple" }
@@ -352,6 +323,35 @@ dependencies = [
 sdist = { url = "https://files.pythonhosted.org/packages/c9/74/b3ff8e6c8446842c3f5c837e9c3dfcfe2018ea6ecef224c710c85ef728f4/requests-2.32.5.tar.gz", hash = "sha256:dbba0bac56e100853db0ea71b82b4dfd5fe2bf6d3754a8893c3af500cec7d7cf", size = 134517, upload-time = "2025-08-18T20:46:02.573Z" }
 wheels = [
     { url = "https://files.pythonhosted.org/packages/1e/db/4254e3eabe8020b458f1a747140d32277ec7a271daf1d235b70dc0b4e6e3/requests-2.32.5-py3-none-any.whl", hash = "sha256:2462f94637a34fd532264295e186976db0f5d453d1cdd31473c85a6a161affb6", size = 64738, upload-time = "2025-08-18T20:46:00.542Z" },
+]
+
+[[package]]
+name = "resource-transfer"
+version = "0.1.0"
+source = { virtual = "." }
+dependencies = [
+    { name = "dotenv" },
+    { name = "mss" },
+    { name = "pillow" },
+    { name = "psutil" },
+    { name = "pydirectinput" },
+    { name = "pynput" },
+    { name = "pywin32" },
+    { name = "requests" },
+    { name = "schedule" },
+]
+
+[package.metadata]
+requires-dist = [
+    { name = "dotenv", specifier = ">=0.9.9" },
+    { name = "mss", specifier = ">=10.1.0" },
+    { name = "pillow", specifier = ">=12.1.1" },
+    { name = "psutil", specifier = ">=7.2.2" },
+    { name = "pydirectinput", specifier = ">=1.0.4" },
+    { name = "pynput", specifier = ">=1.8.1" },
+    { name = "pywin32", specifier = ">=311" },
+    { name = "requests", specifier = ">=2.32.5" },
+    { name = "schedule", specifier = ">=1.2.2" },
 ]
 
 [[package]]

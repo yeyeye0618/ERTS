@@ -77,7 +77,7 @@ class ActionRecorder:
         elif k in ['Key.alt_l', 'Key.alt_r', 'alt']:
             self.current_modifiers['alt'] = False
         
-        if key.char == 'p':
+        if k == 'p':
             return False
 
         self.actions.append({
