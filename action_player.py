@@ -64,8 +64,12 @@ class ActionPlayer:
             
             logger.info(f"開始執行主腳本，預計重複 {self.repeat} 次")
             transfer_type = os.getenv("transfer_type").split(',')
+            name_map = {
+                "藍鐵礦":"blue",
+                "黃鐵礦":"yellow"
+            }
             for type in transfer_type:
-                self.load_script(f"transfer_{type}.json")
+                self.load_script(f"transfer_{name_map[type]}.json")
                 for i in range(self.repeat):
                     logger.info(f">>> 正在執行第 {i+1} / {self.repeat} 次循環")
                     self.execute_action()
