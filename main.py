@@ -30,9 +30,9 @@ class GameScheduler:
             load_dotenv(override=True)
             self.current_interval = int(os.getenv("time_interval"))
             self.current_job = schedule.every(self.current_interval).minutes.do(self.start_automation_flow)
-            self.game_path = os.getenv("game_path")
+            self.game_path = os.getenv("endfield_path")
             self.game_exe_name = os.path.basename(self.game_path)
-            self.game_title = os.getenv("game_title")
+            self.game_title = "Endfield"
             
             logger.info(f"[*] Scheduler initialized for {self.game_title} at path: {self.game_path}")
             self.sender = DiscordSender()

@@ -17,7 +17,7 @@ class ActionPlayer:
             if game_title is not None:
                 self.game_title = game_title
             else:
-                self.game_title = os.getenv("game_title")
+                self.game_title = "Endfield"
             self.actions = []
             self.repeat = int(os.getenv("repeat", "5"))
             
