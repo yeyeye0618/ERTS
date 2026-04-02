@@ -75,10 +75,8 @@ class ActionPlayer:
                     self.execute_action()
             
             logger.info("主腳本執行完成，開始執行回報")
-            for script in ["send_home.json", "show_resource.json"]:
-                self.load_script(script)
-                self.execute_action()
-            
+            self.load_script("show_resource.json")
+            self.execute_action()
             self.execution_report()
             
         except Exception as e:
