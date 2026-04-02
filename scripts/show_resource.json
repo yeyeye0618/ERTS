@@ -2,12 +2,22 @@
   {
     "type": "keydown",
     "key": "esc",
-    "time": 0.78700876235962
+    "time": 0.08700876235962
   },
   {
     "type": "keyup",
     "key": "esc",
-    "time": 0.98700876235962
+    "time": 0.38700876235962
+  },
+  {
+    "type": "keydown",
+    "key": "esc",
+    "time": 1.68700876235962
+  },
+  {
+    "type": "keyup",
+    "key": "esc",
+    "time": 2.98700876235962
   },
   {
     "type": "click",
@@ -21,7 +31,7 @@
       "shift": false,
       "alt": false
     },
-    "time": 3.3660030364990234
+    "time": 5.3660030364990234
   },
   {
     "type": "click",
@@ -35,7 +45,7 @@
       "shift": false,
       "alt": false
     },
-    "time": 4.048840045928955
+    "time": 6.048840045928955
   },
   {
     "type": "click",
@@ -49,10 +59,10 @@
       "shift": false,
       "alt": false
     },
-    "time": 7.982587099075317
+    "time": 8.982587099075317
   },
   {
     "type": "nop",
-    "time": 13.982587099075317
+    "time": 10.982587099075317
   }
 ]
